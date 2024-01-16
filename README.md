@@ -22,7 +22,9 @@ Activate the virtual environment:
 ### Step 5: Run inference on the captcha model 
 
 Run the python file captcha-converter.py with the following arguments:
+
 --im_path = Path to the input image (.jpg)
+
 --save_path = Path to save the output result
 
 Example:
