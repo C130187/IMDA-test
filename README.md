@@ -32,6 +32,8 @@ To run the project, execute the following command:
 
 `python3 captcha-converter.py --im_path='data/test_input/input100.jpg' --save_path='data/test_output/output100.txt'`
 
+Note: The trained model and LabelBinariser used for training and prediction is already saved in the model folder. However, if you wish to train the model from scratch, then delete the files in model folder and run the same command above to see the training in action, followed by inference.
+
 ## Project Structure
 
 **data/input** - sample captcha images from provided link in the test, everything except input100.jpg which is later used for testing
@@ -52,6 +54,6 @@ grouping these subsections by their corresponding digit or letter and storing it
 Used cv2 library to perform basic preprocessing on input captcha images - conversion to grayscale, thresholding, find text contours, subsectioning images into 5 parts - each containing one letter.
 A simple neural network model is used to perform the classification of these subsectioned images to their corresponding 36 categories (10 digits 0-9 and 26 alphabetical letters A-Z)
 
-I also found a library pytesseract, which could be used to develop an alternative solution. Following the same preprocessing steps, the same training data that I created in my solution could be used to fine tune the OCR model provided in this package. 
+Note: I also found a library pytesseract, which could be used to develop an alternative solution. Following the same preprocessing steps, the same training data that I created in my solution could be used to fine tune the OCR model provided in this package. 
 
 
