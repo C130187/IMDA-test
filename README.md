@@ -30,7 +30,7 @@ Run the python file captcha-converter.py with the following arguments:
 Example:
 To run the project, execute the following command:
 
-`python captcha-converter.py --im_path='data/test_input/input100.jpg' --save_path='data/test_output/output100.txt'`
+`python3 captcha-converter.py --im_path='data/test_input/input100.jpg' --save_path='data/test_output/output100.txt'`
 
 ## Project Structure
 
