@@ -47,3 +47,11 @@ grouping these subsections by their corresponding digit or letter and storing it
 
 **model** - contains saved captcha model and LabelBinariser used to map letter/digit to binary for training, and to map back from binary to letter/digit at inference
 
+## Solution explanation
+
+Used cv2 library to perform basic preprocessing on input captcha images - conversion to grayscale, thresholding, find text contours, subsectioning images into 5 parts - each containing one letter.
+A simple neural network model is used to perform the classification of these subsectioned images to their corresponding 36 categories (10 digits 0-9 and 26 alphabetical letters A-Z)
+
+I also found a library pytesseract, which could be used to develop an alternative solution. Following the same preprocessing steps, the same training data that I created in my solution could be used to fine tune the OCR model provided in this package. 
+
+
